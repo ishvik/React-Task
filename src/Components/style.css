@@ -1,0 +1,167 @@
+*{
+    box-sizing: 0;
+}
+
+.container{
+    margin-left: 4%;
+}
+
+h2{
+    margin-left: 1%;
+}
+
+.campaign-list{
+    margin-top: -1%;
+    margin-left: -6.5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.product-list{
+    margin-top: -1%;
+    display: flex;
+}
+
+.addFull{
+    display: flex;
+}
+
+.item{
+    margin-left: 2%;
+}
+
+p{
+    font-weight: 500;
+}
+
+.title{
+    display: flex;
+    /* justify-content: center;*/
+    align-items: center;
+    margin-top: 2%;
+}
+
+.bullets{
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    background-color: #0000CD;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.addRemove{
+    display: flex;
+    margin-top: -1%;
+    margin-left: 50px;
+    align-items: center;
+    color: cornflowerblue;
+    cursor: pointer;
+}
+
+.add{
+    margin-left: 0.3%;
+    font-size: 30px;
+}
+
+.remove{
+    color: lightgray;
+    margin-left: 1%;
+}
+
+.toggleBtn{
+    width: 80vw;
+    height: 20%;
+    margin-left: 5%;
+    margin-top: -2%;
+}
+
+.review{
+    margin-left: 3%;
+    margin-top: -1%;
+    color: darkgray;
+}
+
+.deliType{
+    margin-left: 2%;
+}
+
+.instructDo{
+    margin-left: 2%;
+    display: flex;
+    width: 80%;
+}
+
+.input-instruct{
+    width: 60vh;
+    height: 10vh;
+}
+
+.do{
+    height: 10vh;
+    width: 35vh;
+    margin-left: 2%;
+}
+
+.dont{
+    height: 10vh;
+    width: 35vh;
+    margin-right: -4%;
+}
+
+.input{
+    padding-left: 3%;
+    padding-top: 0;
+}
+
+.info{
+    width: 70%;
+    height: 10%;
+    border: 1px solid lightblue;
+    background-color: lightblue;
+    margin-left: 2%;
+    color: dimgray;
+}
+
+.info p{
+    margin-left: 3%;
+}
+
+.campaignBtn{
+    margin-top: 1%;
+}
+
+.input-media{
+    display: flex;
+    margin-top: 1%;
+    margin-left: 3%;
+}
+
+.input-field-media{
+    height: 25vh;
+    width: 15%;
+    border: 2px solid white;
+    box-shadow: 0 0 2px 2px gray;
+    margin-left: 2%;
+}
+
+.buttons{
+    margin-top: 20vh;
+    margin-left: 15%;
+}
+
+.uploadBtn,.removeBtn{
+    font-size: 18px;
+    outline: none;
+    border: none;
+    color: #1E90FF;
+    background:none;
+    cursor: pointer;
+}
+
+.removeBtn{
+    margin-left: 3%;
+    color: darkgray;
+}
