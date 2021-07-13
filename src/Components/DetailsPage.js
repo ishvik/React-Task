@@ -83,6 +83,16 @@ function DetailsPage() {
             setFile(e.target.files);
         }
     }
+    
+    const saveInfo = ()=>{
+        let bucketName1 = 'campInfo'
+        let campInfo = "campaign Name "+campName+" "+"Campaign Description : "+campDesc+" "+"Platform : "+platform+" StartDate : "+startDate+" EndDate : "+endDate;
+        let storageRef1 = firebase.storage().ref(`${bucketName1}/${campInfo}`)
+        storageRef1.put(campInfo);
+        let bucketName2 = 'product'
+        let storageRef2 = fireabse.storage().ref(`${bucketName2}/${row}`)
+        storageRef2.put(rows);
+    }
 
     //for campaign Info
     const [campName, setCampName] = useState(' ');
