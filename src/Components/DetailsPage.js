@@ -87,7 +87,7 @@ function DetailsPage() {
 
     const saveInfo = ()=>{
         let bucketName1 = 'campInfo'
-        let campInfo = "campaign Name "+campName+" "+"Campaign Description : "+campDesc+" "+"Platform : "+platform+" StartDate : "+startDate+" EndDate : "+endDate;
+        let campInfo = "campaign Name "+campName+" "+"Campaign Description : "+campDesc+" "+"Platform : "+state.platform+" StartDate : "+startDate+" EndDate : "+endDate;
         let storageRef1 = firebase.storage().ref(`${bucketName1}/${campInfo}`)
         storageRef1.put(campInfo);
         let bucketName2 = 'product'
