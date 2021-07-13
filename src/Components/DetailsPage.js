@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Row from './Row'
 import { TextField, makeStyles, InputLabel, FormControl, Select, Switch, FormControlLabel, Button } from '@material-ui/core';
 import "./style.css";
+import firebase from '../firebase'
 
 const useStyles = makeStyles((theme) => ({
     container: {
@@ -83,15 +84,15 @@ function DetailsPage() {
             setFile(e.target.files);
         }
     }
-    
+
     const saveInfo = ()=>{
         let bucketName1 = 'campInfo'
         let campInfo = "campaign Name "+campName+" "+"Campaign Description : "+campDesc+" "+"Platform : "+platform+" StartDate : "+startDate+" EndDate : "+endDate;
         let storageRef1 = firebase.storage().ref(`${bucketName1}/${campInfo}`)
         storageRef1.put(campInfo);
         let bucketName2 = 'product'
-        let storageRef2 = fireabse.storage().ref(`${bucketName2}/${row}`)
-        storageRef2.put(rows);
+        let storageRef2 = firebase.storage().ref(`${bucketName2}/${row}`)
+        storageRef2.put(row);
     }
 
     //for campaign Info
@@ -266,7 +267,7 @@ function DetailsPage() {
                     </div>
                 </div>
                 <div className="campaignBtn">
-                    <Button variant="contained" color="primary">
+                    <Button variant="contained" color="primary" onClick={saveInfo}>
                         Save Campaign
                     </Button>
                 </div>
